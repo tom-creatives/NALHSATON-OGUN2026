@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OGUN2026 — NALHSATON 30th Annual National Conference | Abeokuta, October 2026</title>
+<!-- EmailJS SDK — for sending ticket to registrant's email -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&amp;family=Inter:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+
+<style>
+@media print{
+  body{
+    background:#fff !important;
+  }
+  .topbar,
+  .hero,
+  .form-card,
+  .ticket-note,
+  .ticket-actions,
+  footer{
+    display:none !important;
+  }
+  .ticket-wrap{
+    display:block !important;
+    visibility:visible !important;
+    margin:0 !important;
+    padding:0 !important;
+  }
+  .ticket{
+    box-shadow:none !important;
+    border:1px solid #ccc !important;
+  }
+}
+</style>
+
+</head>
+<body>
+<!-- ===================== TOP BAR ===================== -->
+<header class="topbar">
+<div class="topbar-inner">
+<div class="brand">
+<img alt="NALHSATON Ogun State Chapter logo" class="js-logo" src="assets/logo.jpg"/>
+<div class="brand-text">
+<span class="full">NALHSATON</span>
+<span class="sub">Ogun State Chapter</span>
+</div>
+</div>
+<div class="topbar-cta">
+<span class="conf-no mono">#OGUN2026 · 30TH ANNUAL NATIONAL CONFERENCE</span>
+<a class="btn btn-primary" href="#register">Register</a>
+</div>
+</div>
+</header>
+<!-- ===================== CONFERENCE BANNER ===================== -->
+<div style="width:100%;background:#0a1a0a;line-height:0;margin:0;padding:0;">
+<img alt="NALHSATON 30th Annual National Conference OGUN2026 — 5th–8th October 2026, Abeokuta" class="js-banner" src="assets/banner.jpg" style="width:100%;max-width:100%;display:block;height:auto;"/>
+</div>
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+<div class="hero-grid">
+<div>
+<h1>From Farm to Fortune: Bridging the Gap with Processing and Storage for a Competitive, <em>Self-Sufficient Livestock Industry</em></h1>
+<p class="lead">NALHSATON's Ogun State Chapter brings together scientists, agribusiness operators, and government partners to forge public-private partnerships that finance cold chains, drive value addition, and replace imports — for good.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#register">Reserve your seat</a>
+<a class="btn btn-outline" href="#about">Explore the theme</a>
+</div>
+<div aria-label="Countdown to conference" class="countdown" id="countdown">
+<div class="cd-box"><div class="cd-num" id="cd-days">--</div><div class="cd-lab">Days</div></div>
+<div class="cd-box"><div class="cd-num" id="cd-hours">--</div><div class="cd-lab">Hrs</div></div>
+<div class="cd-box"><div class="cd-num" id="cd-mins">--</div><div class="cd-lab">Min</div></div>
+<div class="cd-box"><div class="cd-num" id="cd-secs">--</div><div class="cd-lab">Sec</div></div>
+</div>
+</div>
+</div></section>
+<!-- ===================== MANIFEST STRIP ===================== -->
+<div class="manifest reveal">
+<div class="manifest-inner">
+<div class="manifest-item">
+<span class="num mono">01</span>
+<div class="val"><span class="k mono">Edition</span><span class="v">30th Annual National Conference</span></div>
+</div>
+<div class="manifest-item">
+<span class="num mono">02</span>
+<div class="val"><span class="k mono">Dates &amp; Time</span><span class="v">Mon 5th – Thu 8th Oct 2026 · 9:00AM Daily</span></div>
+</div>
+<div class="manifest-item">
+<span class="num mono">03</span>
+<div class="val"><span class="k mono">Venue</span><span class="v">The Event Towers, Opp. MKO Abiola Sports Arena, Kuto, Abeokuta</span></div>
+</div>
+<div class="manifest-item">
+<span class="num mono">04</span>
+<div class="val"><span class="k mono">Tag</span><span class="v">#OGUN2026 — Ogun State Chapter</span></div>
+</div>
+</div>
+</div>
+<!-- ===================== ABOUT / THEME ===================== -->
+<section class="section" id="about">
+<div class="section-head reveal">
+<span class="tag mono">MAIN THEME</span>
+<h2>Why processing and storage decide the industry's fortune</h2>
+<p>Nigeria's livestock sector produces large volumes at the farm gate, but loses enormous value before it ever reaches a stable market. This year's conference is built around closing that exact gap — and financing the infrastructure to keep it closed.</p>
+</div>
+<div class="theme-block reveal">
+<blockquote>"From Farm to Fortune: Bridging the Gap with Processing and Storage for a Competitive, Self-Sufficient Livestock Industry."</blockquote>
+<div class="who mono">— MAIN THEME, 30TH NALHSATON ANNUAL NATIONAL CONFERENCE, OGUN2026</div>
+</div>
+<div class="theme-block reveal" style="margin-top:18px; border-left: 4px solid var(--gold);">
+<blockquote style="font-size:clamp(1rem,2vw,1.35rem); color: var(--green-deep);">"Forging Public-Private Partnerships to Finance Cold Chains, Value Addition, and Replace Imports."</blockquote>
+<div class="who mono">— SUB-THEME, OGUN2026</div>
+</div>
+</section>
+<!-- ===================== PROCESS STAGES ===================== -->
+<section class="section section-tight alt-bg">
+<div class="section-head reveal">
+<span class="tag mono">THE PATHWAY</span>
+<h2>Four stages, one value chain</h2>
+<p>The conference programme is structured around where Nigeria's livestock value chain currently leaks value — and what closes each gap.</p>
+</div>
+<div class="stages reveal">
+<div class="stage">
+<span class="stage-no mono">STAGE 01</span>
+<h3>Farm</h3>
+<p>Production scale-up, breed quality, feed efficiency, and biosecurity across Nigeria's livestock sector.</p>
+<span class="stage-arrow">→</span>
+</div>
+<div class="stage">
+<span class="stage-no mono">STAGE 02</span>
+<h3>Processing</h3>
+<p>Transforming raw livestock output into safe, standardized, import-competitive products through value addition.</p>
+<span class="stage-arrow">→</span>
+</div>
+<div class="stage">
+<span class="stage-no mono">STAGE 03</span>
+<h3>Storage</h3>
+<p>Cold chains, warehousing, and preservation infrastructure financed through public-private partnerships.</p>
+<span class="stage-arrow">→</span>
+</div>
+<div class="stage">
+<span class="stage-no mono">STAGE 04</span>
+<h3>Fortune</h3>
+<p>A self-sufficient industry that retains value domestically, replaces imports, and competes globally.</p>
+</div>
+</div>
+</section>
+<!-- ===================== STAKEHOLDERS ===================== -->
+<section class="section" id="partners">
+<div class="section-head reveal">
+<span class="tag mono">STAKEHOLDERS &amp; PARTNERS</span>
+<h2>Convening the people who move the industry</h2>
+<p>Government, agribusiness, and the scientific community, in one room, for four days.</p>
+</div>
+<div class="partners-grid reveal">
+<div class="partner-card">
+<span class="ptag mono">GOVERNMENT</span>
+<h4>Ogun State Ministry of Agriculture and Food Security</h4>
+</div>
+<div class="partner-card">
+<span class="ptag mono">INDUSTRY PARTNER</span>
+<h4>TOSAM Integrated Services Limited</h4>
+</div>
+<div class="partner-card">
+<span class="ptag mono">INDUSTRY PARTNER</span>
+<h4>Profundis Farms Limited</h4>
+</div>
+<div class="partner-card">
+<span class="ptag mono">PROFESSIONAL BODY</span>
+<h4>Animal Science Association of Nigeria (ASAN)</h4>
+</div>
+<div class="partner-card">
+<span class="ptag mono">RESEARCH INSTITUTION</span>
+<h4>National Institute of Animal Sciences (NIAS)</h4>
+</div>
+<div class="partner-card">
+<span class="ptag mono">INDUSTRY GROUP</span>
+<h4>Poultry Association of Nigeria, Ogun State (PANOG)</h4>
+</div>
+<div class="partner-card more">
+      More partners and exhibitors to be announced
+    </div>
+</div>
+</section>
+<!-- ===================== DISTINGUISHED SPEAKERS ===================== -->
+<section class="section section-tight alt-bg" id="speakers">
+<div class="section-head reveal">
+<span class="tag mono">DISTINGUISHED SPEAKERS</span>
+<h2>Voices shaping the industry's direction</h2>
+<p>Confirmed speakers bringing executive leadership from agribusiness, production, and strategic investment to the podium.</p>
+</div>
+<div class="partners-grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(260px,1fr));">
+<div class="partner-card" style="border-top: 3px solid var(--gold); position:relative; overflow:hidden;">
+<div style="position:absolute;top:0;right:0;width:80px;height:80px;background:var(--gold);opacity:0.06;border-radius:0 0 0 80px;"></div>
+<span class="ptag mono" style="color:var(--gold);">KEYNOTE SPEAKER</span>
+<h4 style="margin-top:10px; font-size:1.18rem;">Mr. Elijah Samuel Iyelolu</h4>
+<p style="margin-top:4px; font-size:0.82rem; font-family:'IBM Plex Mono',monospace; color:var(--green-deep); font-weight:600; letter-spacing:0.03em;">Chief Executive Officer</p>
+<p style="margin-top:2px; font-size:0.82rem; font-family:'IBM Plex Mono',monospace; color:#7a7a68;">TOSAM Integrated Services Limited</p>
+<div style="margin-top:14px; height:1px; background:var(--line);"></div>
+<p style="margin-top:12px; font-size:0.88rem; color:#52523f; line-height:1.55;">Delivering the opening keynote address on strategic direction for Nigeria's livestock processing sector and the public-private partnerships needed to close the value chain.</p>
+</div>
+<div class="partner-card" style="border-top: 3px solid var(--green-deep); position:relative; overflow:hidden;">
+<div style="position:absolute;top:0;right:0;width:80px;height:80px;background:var(--green-deep);opacity:0.06;border-radius:0 0 0 80px;"></div>
+<span class="ptag mono">GUEST SPEAKER</span>
+<h4 style="margin-top:10px; font-size:1.18rem;">Dr. Olasemi Olasupo</h4>
+<p style="margin-top:4px; font-size:0.82rem; font-family:'IBM Plex Mono',monospace; color:var(--green-deep); font-weight:600; letter-spacing:0.03em;">General Manager</p>
+<p style="margin-top:2px; font-size:0.82rem; font-family:'IBM Plex Mono',monospace; color:#7a7a68;">Profundis Farms Limited</p>
+<div style="margin-top:14px; height:1px; background:var(--line);"></div>
+<p style="margin-top:12px; font-size:0.88rem; color:#52523f; line-height:1.55;">Sharing operational insights and field experience on bridging the gap between farm-level production and competitive, market-ready livestock output in Nigeria.</p>
+</div>
+<div class="partner-card more" style="min-height:180px; flex-direction:column; gap:8px;">
+<span style="font-size:1.6rem;">🎤</span>
+<span>Additional speakers and panellists will be announced as the conference approaches.</span>
+</div>
+</div>
+</section>
+<!-- ===================== HIGHLIGHTS ===================== -->
+<section class="section section-tight">
+<div class="section-head reveal">
+<span class="tag mono">CONFERENCE HIGHLIGHTS</span>
+<h2>Four days, built for the entire livestock industry</h2>
+<p>Every session, visit, and ceremony is designed to generate practical value for scientists, operators, and investors alike.</p>
+</div>
+<div class="highlights-grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+<div class="highlight-card">
+<span class="hi-icon">🎙️</span>
+<h4>Keynote Addresses &amp; Plenary Sessions</h4>
+<p>High-level addresses setting the strategic agenda for Nigeria's livestock processing and storage future.</p>
+</div>
+<div class="highlight-card">
+<span class="hi-icon">🗣️</span>
+<h4>Panel Discussions with Industry Experts</h4>
+<p>Structured dialogue between scientists, government officials, processors, investors, and financial institutions on key industry gaps.</p>
+</div>
+<div class="highlight-card">
+<span class="hi-icon">🏭</span>
+<h4>Exhibition of Products &amp; Innovations</h4>
+<p>Live showcases of cold-chain technology, processing equipment, and value-addition innovations from exhibitors.</p>
+</div>
+<div class="highlight-card" style="background: var(--green-deep);">
+<span class="hi-icon">🚜</span>
+<h4>Technical Field Trips</h4>
+<p>On-the-ground visits to livestock production and processing facilities in Ogun State and its environs.</p>
+</div>
+<div class="highlight-card" style="background: var(--gold); color: var(--ink);">
+<span class="hi-icon">🏆</span>
+<h4>Awards &amp; Recognition</h4>
+<p style="color: var(--ink); opacity:0.85;">Celebrating outstanding contributions to livestock science, technology, and industry advancement in Nigeria.</p>
+</div>
+<div class="highlight-card" style="background: #2a5a3c;">
+<span class="hi-icon">🏛️</span>
+<h4>Visit to Historical Sites</h4>
+<p>Guided experience of Abeokuta's iconic heritage — including Olumo Rock and key cultural landmarks.</p>
+</div>
+<div class="highlight-card" style="background: #8e161b;">
+<span class="hi-icon">🤝</span>
+<h4>Networking</h4>
+<p>Dedicated sessions connecting scientists, technologists, farmers, and agribusiness leaders across Nigeria.</p>
+</div>
+</div>
+</section>
+<!-- ===================== REGISTRATION ===================== -->
+<section class="section" id="register">
+<div class="section-head reveal">
+<span class="tag mono">REGISTRATION</span>
+<h2>Reserve your seat at #OGUN2026</h2>
+<p>Complete the form to register. You'll receive a conference ticket immediately, which also doubles as your entry pass at the Event Towers.</p>
+</div>
+<div class="reg-wrap">
+<div class="fee-stack reveal">
+<div class="fee-card member">
+<span class="fee-stamp mono">#OGUN2026</span>
+<div class="fee-label mono">Registration Fee</div>
+<div class="fee-amount"><span class="currency">₦</span>15,000</div>
+<div class="fee-note">Uniform rate for all attendees — members, non-members, students, and guests.</div>
+</div>
+<div class="fee-card" style="border-color: var(--gold);">
+<span class="fee-stamp mono">WINDOW</span>
+<div class="fee-label mono" style="color: var(--gold);">Registration Dates</div>
+<div style="margin-top: 14px; display: flex; flex-direction: column; gap: 12px;">
+<div>
+<div style="font-family:'IBM Plex Mono',monospace; font-size:0.65rem; letter-spacing:0.08em; text-transform:uppercase; color:#7a7a68;">Opens</div>
+<div style="font-family:'Fraunces',serif; font-weight:700; font-size:1.2rem; color: var(--green-dark);">15th July 2026</div>
+</div>
+<div>
+<div style="font-family:'IBM Plex Mono',monospace; font-size:0.65rem; letter-spacing:0.08em; text-transform:uppercase; color:#7a7a68;">Regular Closes</div>
+<div style="font-family:'Fraunces',serif; font-weight:700; font-size:1.2rem; color: var(--red);">15th September 2026</div>
+</div>
+</div>
+<div class="fee-note" style="margin-top:14px;">Register before September 15th to secure the standard rate.</div>
+</div>
+<div class="fee-card" style="border-color: var(--red); background: #fff8f8;">
+<span class="fee-stamp mono" style="color:var(--red); border-color:var(--red);">LATE</span>
+<div class="fee-label mono" style="color: var(--red);">Late Registration Fee</div>
+<div class="fee-amount"><span class="currency">₦</span>18,000</div>
+<div class="fee-note">Available from <strong>16th September</strong> until capacity is reached. Applies to all attendee categories.</div>
+</div>
+<div class="fee-card" style="border-color: var(--green-deep); background: #f0f8f4;">
+<span class="fee-stamp mono" style="color:var(--green-deep);border-color:var(--green-deep);">PAY</span>
+<div class="fee-label mono" style="color:var(--green-deep);">Payment Details</div>
+<div style="margin-top:14px;display:flex;flex-direction:column;gap:10px;">
+<div>
+<div style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:#7a7a68;">Bank</div>
+<div style="font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;color:var(--green-dark);">United Bank for Africa (UBA)</div>
+</div>
+<div>
+<div style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:#7a7a68;">Account Name</div>
+<div style="font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem;color:var(--green-dark);">NALHSATON Ogun State</div>
+</div>
+<div>
+<div style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:#7a7a68;">Account Number</div>
+<div style="font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;color:var(--green-dark);letter-spacing:0.06em;font-family:'IBM Plex Mono',monospace;">1022346633</div>
+</div>
+</div>
+<div class="fee-note" style="margin-top:14px;">Use your <strong>full name</strong> as payment narration. Enter your teller/transfer reference in the form below.</div>
+<div>
+<div class="form-card reveal" id="form-card">
+<h3>Conference Registration</h3>
+<p class="form-sub">Fields marked <span style="color:var(--red)">*</span> are required.</p>
+<form id="reg-form" novalidate="">
+<!-- ══ SECTION 1: PERSONAL INFORMATION ══ -->
+<div class="form-section">
+<div class="form-section-head">
+<span class="form-section-no">01</span>
+<span class="form-section-title">Personal Information</span>
+</div>
+<div class="form-row two">
+<div class="field">
+<label for="f-title">Title <span class="req">*</span></label>
+<select id="f-title" name="title" required="">
+<option value="">— Select —</option>
+<option>Prof.</option>
+<option>Dr.</option>
+<option>Mr.</option>
+<option>Mrs.</option>
+<option>Miss</option>
+</select>
+</div>
+<div class="field">
+<label for="f-fullname">Full Name (Surname First) <span class="req">*</span></label>
+<input id="f-fullname" name="fullName" placeholder="e.g. Adeyemi Olumide Tunde" required="" type="text"/>
+</div>
+</div>
+<div class="form-row">
+<div class="field">
+<label>Gender <span class="req">*</span></label>
+<div class="radio-group" id="gender-group">
+<label class="radio-opt"><input name="gender" required="" type="radio" value="Male"/> <span>Male</span></label>
+<label class="radio-opt"><input name="gender" type="radio" value="Female"/> <span>Female</span></label>
+</div>
+</div>
+</div>
+<div class="form-row two">
+<div class="field">
+<label for="f-phone">Phone Number <span class="req">*</span></label>
+<input id="f-phone" name="phone" pattern="[0-9+\s\-]{7,15}" placeholder="080XXXXXXXX" required="" type="tel"/>
+</div>
+<div class="field">
+<label for="f-whatsapp">WhatsApp Number <span class="req">*</span></label>
+<input id="f-whatsapp" name="whatsApp" placeholder="080XXXXXXXX" required="" type="tel"/>
+</div>
+</div>
+<div class="form-row two">
+<div class="field">
+<label for="f-email">Email Address <span class="req">*</span></label>
+<input id="f-email" name="email" placeholder="you@example.com" required="" type="email"/>
+</div>
+<div class="field">
+<label for="f-nationality">Nationality <span class="req">*</span></label>
+<input id="f-nationality" name="nationality" placeholder="e.g. Nigeria" required="" type="text" value="Nigeria"/>
+</div>
+</div>
+<!-- ══ SECTION 2: PROFESSIONAL INFORMATION ══ -->
+<div class="form-section">
+<div class="form-section-head">
+<span class="form-section-no">02</span>
+<span class="form-section-title">Professional Information</span>
+</div>
+<div class="form-row two">
+<div class="field">
+<label for="f-org">Institution / Organisation <span class="req">*</span></label>
+<input id="f-org" name="organization" placeholder="e.g. Ogun State Ministry of Agriculture" required="" type="text"/>
+</div>
+<div class="field">
+<label for="f-designation">Designation / Position <span class="req">*</span></label>
+<input id="f-designation" name="designation" placeholder="e.g. Livestock Officer" required="" type="text"/>
+</div>
+</div>
+</div>
+<div class="form-row two">
+<div class="field">
+<label for="f-category">Category of Participant <span class="req">*</span></label>
+<select id="f-category" name="category" required="">
+<option value="">— Select —</option>
+<option>NALHSATON Member</option>
+<option>Government Official</option>
+<option>Academic</option>
+<option>Research Institute</option>
+<option>Private Sector</option>
+<option>Development Partner</option>
+<option>NGO</option>
+<option>Student</option>
+<option>Exhibitor</option>
+<option>Sponsor</option>
+<option>Media</option>
+<option>Invited Guest</option>
+</select>
+</div>
+<div class="field">
+<label for="f-chapter">State Chapter <span class="req">*</span></label>
+<select id="f-chapter" name="stateChapter" required="">
+<option value="">— Select Chapter —</option>
+<option value="Abia">Abia</option>
+<option value="Adamawa">Adamawa</option>
+<option value="Akwa Ibom">Akwa Ibom</option>
+<option value="Anambra">Anambra</option>
+<option value="Bauchi">Bauchi</option>
+<option value="Bayelsa">Bayelsa</option>
+<option value="Benue">Benue</option>
+<option value="Borno">Borno</option>
+<option value="Cross River">Cross River</option>
+<option value="Delta">Delta</option>
+<option value="Ebonyi">Ebonyi</option>
+<option value="Edo">Edo</option>
+<option value="Ekiti">Ekiti</option>
+<option value="Enugu">Enugu</option>
+<option value="FCT - Abuja">FCT - Abuja</option>
+<option value="Gombe">Gombe</option>
+<option value="Imo">Imo</option>
+<option value="Jigawa">Jigawa</option>
+<option value="Kaduna">Kaduna</option>
+<option value="Kano">Kano</option>
+<option value="Katsina">Katsina</option>
+<option value="Kebbi">Kebbi</option>
+<option value="Kogi">Kogi</option>
+<option value="Kwara">Kwara</option>
+<option value="Lagos">Lagos</option>
+<option value="Nasarawa">Nasarawa</option>
+<option value="Niger">Niger</option>
+<option value="Ogun">Ogun</option>
+<option value="Ondo">Ondo</option>
+<option value="Osun">Osun</option>
+<option value="Oyo">Oyo</option>
+<option value="Plateau">Plateau</option>
+<option value="Rivers">Rivers</option>
+<option value="Sokoto">Sokoto</option>
+<option value="Taraba">Taraba</option>
+<option value="Yobe">Yobe</option>
+<option value="Zamfara">Zamfara</option>
+</select>
+</div>
+</div>
+<!-- ══ SECTION 3: CONFERENCE PARTICIPATION ══ -->
+<div class="form-section">
+<div class="form-section-head">
+<span class="form-section-no">03</span>
+<span class="form-section-title">Conference Participation</span>
+</div>
+<div class="form-row">
+<div class="field">
+<label>Which conference activities will you attend? <span class="req">*</span></label>
+<div class="checkbox-group" id="activities-group">
+<label class="check-opt"><input name="activities" type="checkbox" value="Opening Ceremony"/> <span>Opening Ceremony</span></label>
+<label class="check-opt"><input name="activities" type="checkbox" value="Conference Lecture"/> <span>Conference Lecture</span></label>
+<label class="check-opt"><input name="activities" type="checkbox" value="Panel Discussion"/> <span>Panel Discussion</span></label>
+<label class="check-opt"><input name="activities" type="checkbox" value="Technical Field Trip"/> <span>Technical Field Trip</span></label>
+<label class="check-opt"><input name="activities" type="checkbox" value="Annual General Meeting"/> <span>Annual General Meeting</span></label>
+<label class="check-opt"><input name="activities" type="checkbox" value="Historical Tour"/> <span>Historical Tour</span></label>
+<label class="check-opt"><input name="activities" type="checkbox" value="Exhibition"/> <span>Exhibition</span></label>
+<label class="check-opt"><input name="activities" type="checkbox" value="Awards Ceremony"/> <span>Awards Ceremony</span></label>
+<label class="check-opt"><input name="activities" type="checkbox" value="Closing Ceremony"/> <span>Closing Ceremony</span></label>
+</div>
+</div>
+</div>
+<div class="form-row">
+<div class="field">
+<label for="f-regcat">Registration Category <span class="req">*</span></label>
+<select id="f-regcat" name="registrationType" onchange="handleRegCategory(this.value)" required="">
+<option value="">— Select —</option>
+<option value="Regular Registration (Early)">Regular Registration (Early)</option>
+<option value="Sponsored Delegate">Sponsored Delegate</option>
+<option value="Complimentary">Complimentary</option>
+<option value="Late Registration">Late Registration</option>
+</select>
+<div class="field-footnotes" id="regcat-footnotes" style="margin-top:8px;display:none;">
+<p class="fn-regular" style="display:none;font-size:0.8rem;color:#46463a;padding:7px 10px;background:#f0f8f0;border-left:3px solid var(--green-deep);border-radius:2px;">For NALHSATON Members and Interested Participants</p>
+<p class="fn-sponsored" style="display:none;font-size:0.8rem;color:#46463a;padding:7px 10px;background:#f0f8f0;border-left:3px solid var(--gold);border-radius:2px;">Delegates of Corporate Organisations</p>
+<p class="fn-complimentary" style="display:none;font-size:0.8rem;color:#46463a;padding:7px 10px;background:#f0f8f0;border-left:3px solid var(--red);border-radius:2px;">For Dignitaries invited for the event</p>
+<p class="fn-late" style="display:none;font-size:0.8rem;color:#46463a;padding:7px 10px;background:#f0f8f0;border-left:3px solid #888;border-radius:2px;">Available from 16th September 2026 — ₦18,000</p>
+</div>
+</div>
+</div>
+<!-- ══ SECTION 4: PAYMENT INFORMATION ══ -->
+<div class="form-section" id="payment-section">
+<div class="form-section-head">
+<span class="form-section-no">04</span>
+<span class="form-section-title">Payment Information</span>
+</div>
+<div class="form-row two">
+<div class="field">
+<label for="f-payment">Payment Status <span class="req">*</span></label>
+<select id="f-payment" name="paymentStatus" required="">
+<option value="">— Select —</option>
+<option>Paid</option>
+<option>Not Paid</option>
+</select>
+</div>
+</div>
+<div class="form-row two">
+<div class="field">
+<label for="f-paydate">Date of Payment</label>
+<input id="f-paydate" name="paymentDate" type="date"/>
+</div>
+<div class="field">
+<label for="f-payref">Payment Reference / Teller No.</label>
+<input id="f-payref" name="paymentReference" placeholder="e.g. Bank transfer reference" type="text"/>
+</div>
+</div>
+<!-- ══ SECTION 5: EMERGENCY CONTACT ══ -->
+<div class="form-section">
+<div class="form-section-head">
+<span class="form-section-no">05</span>
+<span class="form-section-title">Emergency Contact</span>
+</div>
+<div class="form-row two">
+<div class="field">
+<label for="f-ec-name">Contact Name</label>
+<input id="f-ec-name" name="emergencyContactName" placeholder="Full name" type="text"/>
+</div>
+<div class="field">
+<label for="f-ec-rel">Relationship</label>
+<input id="f-ec-rel" name="emergencyRelationship" placeholder="e.g. Spouse, Sibling, Parent" type="text"/>
+</div>
+</div>
+<div class="form-row">
+<div class="field">
+<label for="f-ec-phone">Contact Phone</label>
+<input id="f-ec-phone" name="emergencyPhone" placeholder="080XXXXXXXX" type="tel"/>
+</div>
+</div>
+<!-- ══ SECTION 6: CONSENT AND DECLARATION ══ -->
+<div class="form-section">
+<div class="form-section-head">
+<span class="form-section-no">06</span>
+<span class="form-section-title">Consent and Declaration</span>
+</div>
+<div class="form-row" style="padding:16px 0 0;">
+<div class="field">
+<label for="f-cert-name">Preferred Name on Conference Certificate <span class="req">*</span></label>
+<input id="f-cert-name" name="certificateName" placeholder="Name exactly as you want it on the certificate" required="" type="text"/>
+<p style="font-size:0.78rem;color:#7a7a68;margin-top:5px;">This name will be printed on your participation certificate. Defaults to your full name if left blank.</p>
+</div>
+</div>
+<div style="background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:18px 20px;display:flex;flex-direction:column;gap:14px;margin-top:14px;">
+<label class="decl-check">
+<input name="photoConsent" required="" style="accent-color:var(--green-deep);width:17px;height:17px;flex-shrink:0;margin-top:2px;" type="checkbox" value="I consent to photographs and videos taken during the conference to be used by NALHSATON"/>
+<span>I consent to photographs and videos taken during the conference to be used by NALHSATON. <span class="req">*</span></span>
+</label>
+<label class="decl-check">
+<input name="informationCorrect" required="" style="accent-color:var(--green-deep);width:17px;height:17px;flex-shrink:0;margin-top:2px;" type="checkbox" value="I certify that the information provided is correct"/>
+<span>I certify that the information provided is correct. <span class="req">*</span></span>
+</label>
+<label class="decl-check">
+<input name="conferenceRules" required="" style="accent-color:var(--green-deep);width:17px;height:17px;flex-shrink:0;margin-top:2px;" type="checkbox" value="I agree to abide by the rules of the conference."/>
+<span>I agree to abide by the rules of the conference. <span class="req">*</span></span>
+</label>
+</div>
+</div>
+<button class="btn btn-primary form-submit" id="reg-submit" style="width:100%;justify-content:center;padding:16px;font-size:1rem;margin-top:8px;" type="submit">Complete Registration &amp; Get Ticket →</button>
+<p class="form-foot-note" style="margin-top:12px;">Having trouble? <a href="mailto:ogunnalhsaton@gmail.com?subject=Registration%20Help" style="color:var(--green-deep);font-weight:600;text-decoration:underline;">Email us directly</a> and we'll register you manually.</p>
+</div></div></div></div></form>
+</div>
+<div class="form-actions">
+<button class="btn btn-gold" id="reg-submit" type="submit">
+                Complete Registration &amp; Get Ticket →
+            </button>
+</div>
+
+</div>
+<!-- ===================================================== -->
+<!-- TICKET STARTS HERE (OUTSIDE THE FORM-CARD)            -->
+<!-- ===================================================== -->
+<div class="ticket-wrap" id="ticket-wrap">
+<div class="ticket">
+<div class="ticket-top">
+<div class="ticket-brand">
+<img alt="" class="js-logo" src="assets/logo.jpg"/>
+<span>NALHSATON · OGUN STATE CHAPTER</span>
+</div>
+<div class="ticket-name" id="t-name">—</div>
+<div class="ticket-meta" id="t-org">—</div>
+<div class="ticket-meta" id="t-email" style="font-size:.78rem;color:rgba(255,255,255,.55);margin-top:2px;">
+</div>
+<div class="ticket-grid">
+<div class="tg-item">
+<div class="k mono">CATEGORY</div>
+<div class="v" id="t-category">—</div>
+</div>
+<div class="tg-item">
+<div class="k mono">FEE DUE</div>
+<div class="v" id="t-fee">—</div>
+</div>
+<div class="tg-item">
+<div class="k mono">DATES</div>
+<div class="v">5th–8th Oct 2026</div>
+</div>
+<div class="tg-item">
+<div class="k mono">VENUE</div>
+<div class="v">Event Towers, Kuto</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ticket-bottom">
+<span class="ticket-code" id="t-code">
+                NALHSATON-OG-000000
+            </span>
+<div class="ticket-actions">
+<button class="btn btn-gold" onclick="printTicket()">
+                    Print / Save
+                </button>
+<button class="btn btn-outline" id="new-reg-btn" style="border-color:white;color:white;">
+                    New Registration
+                </button>
+</div>
+</div>
+</div>
+<p class="ticket-note">
+        Save a copy of this ticket. Present it at the registration desk in Abeokuta.
+    </p>
+<p class="ticket-note">
+        Didn't get a confirmation email within 24 hours?
+        <a href="mailto:ogunnalhsaton@gmail.com?subject=Registration%20Confirmation%20Check">
+            Contact the secretariat
+        </a>
+</p>
+</div>
+<!-- ===================== FOOTER / CONTACT ===================== -->
+<!-- ===================== ABOUT NALHSATON ===================== -->
+<section id="about-us" style="background: var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding: 80px 24px;">
+<div style="max-width:1200px; margin:0 auto;">
+<div class="reveal" style="display:grid; grid-template-columns:1fr; gap:48px;">
+<div style="max-width:680px;">
+<span style="font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--red); font-weight:700; display:block; margin-bottom:12px;">ABOUT NALHSATON</span>
+<h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:clamp(1.7rem,3.4vw,2.5rem); color:var(--green-dark); line-height:1.15;">The professional voice of Nigeria's livestock scientists</h2>
+</div>
+</div>
+<div class="reveal" style="display:grid; grid-template-columns:1fr; gap:32px; margin-top:40px;">
+<div class="about-grid" style="display:grid; grid-template-columns:1fr; gap:32px;">
+<!-- Left: text -->
+<div>
+<div style="background:var(--white); border:1px solid var(--line); border-radius:6px; padding:32px 30px; margin-bottom:20px;">
+<p style="font-size:1.04rem; color:#3a3a30; line-height:1.75;">The <strong>National Association of Livestock Husbandry Scientists and Technologists of Nigeria (NALHSATON)</strong> is Nigeria's foremost professional body for livestock scientists and technologists. The association focuses on animal husbandry, research, production, and policy within the agricultural sector.</p>
+<p style="margin-top:16px; font-size:1.04rem; color:#3a3a30; line-height:1.75;">Established approximately 30 years ago, NALHSATON's National Headquarters is situated at <strong>No. 6 Wallace Street, Lokoja, Kogi State</strong>, with state chapters spread across the federation.</p>
+<div style="margin-top:22px; padding:18px 22px; background:var(--green-dark); border-radius:4px; display:inline-block;">
+<span style="font-family:'IBM Plex Mono',monospace; font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.6);">Association Motto</span>
+<p style="font-family:'Fraunces',serif; font-size:1.25rem; font-style:italic; font-weight:600; color:var(--gold); margin-top:4px;">"Livestock Production for National Growth"</p>
+</div>
+</div>
+<!-- Membership types -->
+<div style="background:var(--white); border:1px solid var(--line); border-radius:6px; padding:28px 30px;">
+<h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.2rem; color:var(--green-dark); margin-bottom:16px;">Membership</h3>
+<p style="font-size:0.95rem; color:#3a3a30; line-height:1.7; margin-bottom:14px;">Members are drawn from Animal Scientists and Technologists across various fields and specialisations within the civil/public service, government agencies, and local government.</p>
+<div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:10px;">
+<span style="font-family:'IBM Plex Mono',monospace; font-size:0.75rem; font-weight:700; padding:7px 14px; border:1.5px solid var(--green-deep); border-radius:20px; color:var(--green-deep);">Full Members</span>
+<span style="font-family:'IBM Plex Mono',monospace; font-size:0.75rem; font-weight:700; padding:7px 14px; border:1.5px solid var(--gold); border-radius:20px; color:var(--gold);">Associate Members</span>
+<span style="font-family:'IBM Plex Mono',monospace; font-size:0.75rem; font-weight:700; padding:7px 14px; border:1.5px solid var(--red); border-radius:20px; color:var(--red);">Student Members</span>
+<span style="font-family:'IBM Plex Mono',monospace; font-size:0.75rem; font-weight:700; padding:7px 14px; border:1.5px solid #7a7a68; border-radius:20px; color:#7a7a68;">Honorary Members</span>
+</div>
+</div>
+</div>
+<!-- Right: aims -->
+<div>
+<div style="background:var(--white); border:1px solid var(--line); border-radius:6px; padding:28px 30px; height:100%;">
+<h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:1.2rem; color:var(--green-dark); margin-bottom:20px;">Aims &amp; Objectives</h3>
+<div class="aims-grid" style="display:grid; grid-template-columns:1fr; gap:14px;">
+<div style="display:flex; gap:12px; align-items:flex-start;">
+<span style="flex-shrink:0; width:22px; height:22px; background:var(--green-deep); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:0.6rem; color:white; font-weight:700; margin-top:1px;">01</span>
+<p style="font-size:0.9rem; color:#3a3a30; line-height:1.6;">Provide a common forum for matters affecting livestock production in Nigeria.</p>
+</div>
+<div style="display:flex; gap:12px; align-items:flex-start;">
+<span style="flex-shrink:0; width:22px; height:22px; background:var(--green-deep); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:0.6rem; color:white; font-weight:700; margin-top:1px;">02</span>
+<p style="font-size:0.9rem; color:#3a3a30; line-height:1.6;">Defend the integrity, promote, protect, and foster the unity and welfare of members.</p>
+</div>
+<div style="display:flex; gap:12px; align-items:flex-start;">
+<span style="flex-shrink:0; width:22px; height:22px; background:var(--green-deep); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:0.6rem; color:white; font-weight:700; margin-top:1px;">03</span>
+<p style="font-size:0.9rem; color:#3a3a30; line-height:1.6;">Act as a collective advisory body on national livestock policy formulation, development, and implementation.</p>
+</div>
+<div style="display:flex; gap:12px; align-items:flex-start;">
+<span style="flex-shrink:0; width:22px; height:22px; background:var(--green-deep); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:0.6rem; color:white; font-weight:700; margin-top:1px;">04</span>
+<p style="font-size:0.9rem; color:#3a3a30; line-height:1.6;">Regulate and ensure the allocation of work schedules in livestock establishments to qualified scientists and technologists.</p>
+</div>
+<div style="display:flex; gap:12px; align-items:flex-start;">
+<span style="flex-shrink:0; width:22px; height:22px; background:var(--green-deep); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:0.6rem; color:white; font-weight:700; margin-top:1px;">05</span>
+<p style="font-size:0.9rem; color:#3a3a30; line-height:1.6;">Cooperate with organisations within and outside Nigeria with similar objectives involving the association.</p>
+</div>
+<div style="display:flex; gap:12px; align-items:flex-start;">
+<span style="flex-shrink:0; width:22px; height:22px; background:var(--green-deep); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:0.6rem; color:white; font-weight:700; margin-top:1px;">06</span>
+<p style="font-size:0.9rem; color:#3a3a30; line-height:1.6;">Defend and seek redress over issues and disputes involving the association.</p>
+</div>
+<div style="display:flex; gap:12px; align-items:flex-start;">
+<span style="flex-shrink:0; width:22px; height:22px; background:var(--red); border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:0.6rem; color:white; font-weight:700; margin-top:1px;">07</span>
+<p style="font-size:0.9rem; color:#3a3a30; line-height:1.6;">Constitute a National Council for Livestock Production.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+<!-- ===================== CHAPTER EXECUTIVES ===================== -->
+<section id="executives" style="background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:72px 24px;">
+<div style="max-width:1200px;margin:0 auto;">
+<div class="reveal" style="max-width:680px;margin-bottom:40px;">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--red);font-weight:700;display:block;margin-bottom:12px;">OGUN STATE CHAPTER</span>
+<h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.7rem,3.4vw,2.5rem);color:var(--green-dark);line-height:1.15;">Executive Committee</h2>
+<p style="margin-top:14px;color:#46463a;font-size:1.02rem;">The elected leadership of the NALHSATON Ogun State Chapter, inaugurated <strong>21st June 2019</strong> and proudly hosting the 30th Annual National Conference.</p>
+</div>
+<div class="reveal" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;">
+<div style="background:var(--green-dark);color:var(--white);border-radius:6px;padding:22px;position:relative;overflow:hidden;">
+<div style="position:absolute;top:0;right:0;width:60px;height:60px;background:var(--gold);opacity:0.15;border-radius:0 0 0 60px;"></div>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:8px;">Chairman</span>
+<h4 style="font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;">Ayanbajo Tunde</h4>
+</div>
+<div style="background:var(--white);border:1px solid var(--line);border-radius:6px;padding:22px;">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:8px;">Secretary</span>
+<h4 style="font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;color:var(--green-dark);">Tanimonure Olufemi</h4>
+</div>
+<div style="background:var(--white);border:1px solid var(--line);border-radius:6px;padding:22px;">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:8px;">Assistant Secretary</span>
+<h4 style="font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;color:var(--green-dark);">Adesegun Yemisi</h4>
+</div>
+<div style="background:var(--white);border:1px solid var(--line);border-radius:6px;padding:22px;">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:8px;">Financial Secretary</span>
+<h4 style="font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;color:var(--green-dark);">Otolorin Ayorinde</h4>
+</div>
+<div style="background:var(--white);border:1px solid var(--line);border-radius:6px;padding:22px;">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:8px;">Treasurer</span>
+<h4 style="font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;color:var(--green-dark);">Onadeko Oluwakemi</h4>
+</div>
+<div style="background:var(--white);border:1px solid var(--line);border-radius:6px;padding:22px;">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:8px;">Public Relations Officer</span>
+<h4 style="font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;color:var(--green-dark);">Olowookere Titus</h4>
+</div>
+<div style="background:var(--white);border:1px solid var(--line);border-radius:6px;padding:22px;">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:8px;">Auditors</span>
+<h4 style="font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;color:var(--green-dark);">Omoniyi Olumide &amp; Legunsen Olalekan</h4>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer" id="contact">
+<div class="footer-inner">
+<div class="footer-grid">
+<div>
+<div class="footer-brand">
+<img alt="NALHSATON logo" class="js-logo" src="assets/logo.jpg"/>
+<div>
+<div class="ft-name">NALHSATON</div>
+<div class="ft-sub">OGUN STATE CHAPTER</div>
+</div>
+</div>
+<p class="about">The Ogun State Chapter of the National Association of Livestock Husbandry Scientists and Technologists of Nigeria (NALHSATON) — proud host of the 30th Annual National Conference (#OGUN2026), 5th–8th October 2026, Abeokuta, Ogun State.</p>
+</div>
+<div>
+<h5>CONTACT</h5>
+<ul>
+<li><a href="mailto:ogunnalhsaton@gmail.com">ogunnalhsaton@gmail.com</a></li>
+<li>Dept. of Livestock Services,<br/>Veterinary Hospital Complex,<br/>Ita-Eko, Abeokuta, Ogun State</li>
+<li style="margin-top:6px; font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color: var(--gold);">9:00AM Daily · Mon 5th – Thu 8th Oct</li>
+</ul>
+</div>
+<div>
+<h5>CONFERENCE</h5>
+<ul>
+<li><a href="#about">Theme &amp; Sub-theme</a></li>
+<li><a href="#executives">Chapter Executives</a></li>
+<li><a href="#about-us">About NALHSATON</a></li>
+<li><a href="#about-us">About NALHSATON</a></li>
+<li><a href="#speakers">Distinguished Speakers</a></li>
+<li><a href="#partners">Stakeholders &amp; Partners</a></li>
+<li><a href="#register">Registration</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 NALHSATON — Ogun State Chapter. All rights reserved.</span>
+<span class="mono">#OGUN2026 · 30TH ANNUAL NATIONAL CONFERENCE</span>
+</div>
+</div>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/form.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ticket.js"></script>
+<script src="js/email.js"></script>
+<script src="js/app.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
