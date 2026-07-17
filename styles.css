@@ -669,6 +669,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 .ticket{
+    color:#222;
     width:100%;
     display:block;
 }
@@ -695,7 +696,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   font-size:0.7rem;
   letter-spacing:0.1em;
   text-transform:uppercase;
-  color:rgba(255,255,255,0.7);
+  color:#555;
 }
 .ticket-name{
   font-family:'Fraunces',serif;
@@ -705,7 +706,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .ticket-meta{
   margin-top:4px;
   font-size:0.85rem;
-  color:rgba(255,255,255,0.75);
+  color:#444;
 }
 .ticket-grid{
   display:grid;
@@ -718,9 +719,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   font-size:0.62rem;
   text-transform:uppercase;
   letter-spacing:0.08em;
-  color:rgba(255,255,255,0.55);
+  color:#666;
 }
 .ticket-grid .tg-item .v{
+  color:#111; 
   font-weight:700;
   margin-top:2px;
   font-family:'Fraunces',serif;

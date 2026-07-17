@@ -14,7 +14,7 @@ function showTicket(data, ticketNo){
         data.category;
 
     document.getElementById("t-fee").textContent =
-        data.registrationType;
+        data.registrationFee;
 
     document.getElementById("t-code").textContent =
         ticketNo;
@@ -24,6 +24,7 @@ function showTicket(data, ticketNo){
     const ticket = document.getElementById("ticket-wrap");
 
     ticket.style.display = "block";
+    ticket.style.visibility = "visible";
     ticket.classList.add("show");
 
     ticket.scrollIntoView({
@@ -41,41 +42,52 @@ function showTicket(data, ticketNo){
 }
 
 function printTicket(){
+
     const ticket = document.querySelector(".ticket");
+
     if(!ticket){
         alert("Ticket not found.");
         return;
     }
 
-    const printWindow = window.open("", "_blank");
+    const clone = ticket.cloneNode(true);
 
-    printWindow.document.write(`
-        <html>
-        <head>
-            <title>NALHSATON Conference Ticket</title>
-            <style>
-                body{
-                    font-family: Arial, sans-serif;
-                    margin:20px;
-                    background:#fff;
-                }
-                .ticket{
-                    border:1px solid #ccc;
-                    border-radius:12px;
-                    padding:24px;
-                }
-            </style>
-        </head>
-        <body>
-            ${ticket.outerHTML}
-        </body>
-        </html>
-    `);
+    clone.style.display = "block";
+    clone.style.visibility = "visible";
+    clone.style.background = "#ffffff";
+    clone.style.color = "#000000";
+    clone.style.width = "800px";
+    clone.style.padding = "20px";
 
-    printWindow.document.close();
-    printWindow.focus();
+    document.body.appendChild(clone);
 
-    setTimeout(() => {
-        printWindow.print();
-    }, 300);
+    const ticketNo =
+        document.getElementById("t-code").textContent.trim();
+
+    html2pdf()
+        .set({
+            margin:0.3,
+            filename:`NALHSATON_Ticket_${ticketNo}.pdf`,
+            image:{
+                type:"jpeg",
+                quality:1
+            },
+            html2canvas:{
+                scale:3,
+                useCORS:true,
+                logging:false,
+                backgroundColor:"#ffffff"
+            },
+            jsPDF:{
+                unit:"in",
+                format:"a4",
+                orientation:"portrait"
+            }
+        })
+        .from(clone)
+        .save()
+        .then(()=>{
+            document.body.removeChild(clone);
+        });
+
 }

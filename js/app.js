@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const form = document.getElementById("reg-form");
@@ -24,12 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Registration Data:", data);
 
         const submitBtn = form.querySelector('button[type="submit"]');
-        if(submitBtn){
+
+        if (submitBtn) {
             submitBtn.disabled = true;
             submitBtn.textContent = "Processing...";
         }
 
-        try{
+        try {
+
             const result = await submitRegistration(data);
 
             console.log("Result:", result);
@@ -42,25 +43,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 console.log("showTicket finished.");
 
-                const emailResult = await sendTicketEmail(data, result.ticketNo);
+                const emailResult =
+                    await sendTicketEmail(data, result.ticketNo);
 
-                if(!emailResult.success){
-                    console.warn("Email not sent:", emailResult.message);
+                if (!emailResult.success) {
+                    console.warn(
+                        "Email not sent:",
+                        emailResult.message
+                    );
                 }
 
             } else {
 
-                alert(result.message || "Registration failed.");
+                alert(
+                    result.error ||
+                    result.message ||
+                    "Registration failed."
+                );
 
             }
-        }catch(err){
+
+        } catch (err) {
+
             console.error(err);
-            alert("An unexpected error occurred.");
-        }finally{
-            if(submitBtn){
+
+            alert(
+                "Unable to complete your registration. Please check your internet connection and try again."
+            );
+
+        } finally {
+
+            if (submitBtn) {
                 submitBtn.disabled = false;
-                submitBtn.textContent = "Complete Registration & Get Ticket →";
+                submitBtn.textContent =
+                    "Complete Registration & Get Ticket →";
             }
+
         }
 
     });

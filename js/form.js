@@ -31,6 +31,8 @@ function getFormData(form) {
 
         registrationType: form.registrationType.value,
 
+        registrationFee: getRegistrationFee(form.registrationType.value),
+
         paymentStatus: form.paymentStatus.value,
 
         paymentDate: form.paymentDate.value,
@@ -56,4 +58,27 @@ function getFormData(form) {
 
     };
 
+}
+/**
+ * Returns the registration fee based on registration type
+ */
+function getRegistrationFee(registrationType) {
+
+    switch (registrationType) {
+
+        case "Regular Registration (Early)":
+            return "₦15,000";   // Change if your approved fee is different
+
+        case "Sponsored Delegate":
+            return "SPONSORED";
+
+        case "Complimentary":
+            return "FREE";
+
+        case "Late Registration":
+            return "₦18,000";   // Change if applicable
+
+        default:
+            return "Not Available";
+    }
 }
