@@ -584,59 +584,88 @@
 <!-- TICKET STARTS HERE (OUTSIDE THE FORM-CARD)            -->
 <!-- ===================================================== -->
 <div class="ticket-wrap" id="ticket-wrap">
-<div class="ticket">
-<div class="ticket-top">
-<div class="ticket-brand">
-<img alt="" class="js-logo" src="assets/logo.jpg"/>
-<span>NALHSATON · OGUN STATE CHAPTER</span>
-</div>
-<div class="ticket-name" id="t-name">—</div>
-<div class="ticket-meta" id="t-org">—</div>
-<div class="ticket-meta" id="t-email" style="font-size:.78rem;color:rgba(255,255,255,.55);margin-top:2px;">
-</div>
-<div class="ticket-grid">
-<div class="tg-item">
-<div class="k mono">CATEGORY</div>
-<div class="v" id="t-category">—</div>
-</div>
-<div class="tg-item">
-<div class="k mono">FEE DUE</div>
-<div class="v" id="t-fee">—</div>
-</div>
-<div class="tg-item">
-<div class="k mono">DATES</div>
-<div class="v">5th–8th Oct 2026</div>
-</div>
-<div class="tg-item">
-<div class="k mono">VENUE</div>
-<div class="v">Event Towers, Kuto</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ticket-bottom">
-<span class="ticket-code" id="t-code">
+
+    <div class="ticket">
+
+        <div class="ticket-top">
+
+            <div class="ticket-brand">
+                <img src="assets/logo.jpg" class="js-logo" alt="">
+                <span>NALHSATON · OGUN STATE CHAPTER</span>
+            </div>
+
+            <div class="ticket-name" id="t-name">—</div>
+
+            <div class="ticket-meta" id="t-org">—</div>
+
+            <div class="ticket-meta"
+                 id="t-email"
+                 style="font-size:.78rem;color:#555;margin-top:2px;">
+            </div>
+
+            <div class="ticket-grid">
+
+                <div class="tg-item">
+                    <div class="k mono">CATEGORY</div>
+                    <div class="v" id="t-category">—</div>
+                </div>
+
+                <div class="tg-item">
+                    <div class="k mono">FEE DUE</div>
+                    <div class="v" id="t-fee">—</div>
+                </div>
+
+                <div class="tg-item">
+                    <div class="k mono">DATES</div>
+                    <div class="v">5th–8th Oct 2026</div>
+                </div>
+
+                <div class="tg-item">
+                    <div class="k mono">VENUE</div>
+                    <div class="v">Event Towers, Kuto</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- MOVED INSIDE .ticket -->
+        <div class="ticket-bottom">
+
+            <span class="ticket-code" id="t-code">
                 NALHSATON-OG-000000
             </span>
-<div class="ticket-actions">
-<button class="btn btn-gold" onclick="printTicket()">
+
+            <div class="ticket-actions">
+
+                <button class="btn btn-gold" onclick="printTicket()">
                     Print / Save
                 </button>
-<button class="btn btn-outline" id="new-reg-btn" style="border:1px solid #0B6B3A;color:#0B6B3A;background:#fff;"
+
+                <button
+                    class="btn btn-outline"
+                    id="new-reg-btn"
+                    style="border:1px solid #0B6B3A;color:#0B6B3A;background:#fff;">
                     New Registration
                 </button>
-</div>
-</div>
-</div>
-<p class="ticket-note">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <p class="ticket-note">
         Save a copy of this ticket. Present it at the registration desk in Abeokuta.
     </p>
-<p class="ticket-note">
+
+    <p class="ticket-note">
         Didn't get a confirmation email within 24 hours?
         <a href="mailto:ogunnalhsaton@gmail.com?subject=Registration%20Confirmation%20Check">
             Contact the secretariat
         </a>
-</p>
+    </p>
+
 </div>
 <!-- ===================== FOOTER / CONTACT ===================== -->
 <!-- ===================== ABOUT NALHSATON ===================== -->
@@ -796,8 +825,8 @@
 <script src="js/form.js"></script>
 <script src="js/validation.js"></script>
 <script src="js/api.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-<script src="js/ticket.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="js/email.js"></script>
 <script src="js/app.js"></script>
 <script src="script.js"></script>

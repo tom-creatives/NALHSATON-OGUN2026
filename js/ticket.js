@@ -41,53 +41,44 @@ function showTicket(data, ticketNo){
     }
 }
 
-function printTicket(){
+async function printTicket() {
 
-    const ticket = document.querySelector(".ticket");
+    const ticket = document.getElementById("ticket-wrap");
 
-    if(!ticket){
+    if (!ticket) {
         alert("Ticket not found.");
         return;
     }
 
-    const clone = ticket.cloneNode(true);
+    // Render the ticket to a canvas
+    const canvas = await html2canvas(ticket, {
+        scale: 3,
+        useCORS: true,
+        backgroundColor: "#ffffff",
+        logging: false
+    });
 
-    clone.style.display = "block";
-    clone.style.visibility = "visible";
-    clone.style.background = "#ffffff";
-    clone.style.color = "#000000";
-    clone.style.width = "800px";
-    clone.style.padding = "20px";
+    // Convert canvas to PNG
+    const imgData = canvas.toDataURL("image/png");
 
-    document.body.appendChild(clone);
+    // Create PDF
+    const pdf = new jspdf.jsPDF({
+        orientation: "portrait",
+        unit: "mm",
+        format: "a4"
+    });
 
-    const ticketNo =
-        document.getElementById("t-code").textContent.trim();
+    const pageWidth = pdf.internal.pageSize.getWidth();
+    const pageHeight = pdf.internal.pageSize.getHeight();
 
-    html2pdf()
-        .set({
-            margin:0.3,
-            filename:`NALHSATON_Ticket_${ticketNo}.pdf`,
-            image:{
-                type:"jpeg",
-                quality:1
-            },
-            html2canvas:{
-                scale:3,
-                useCORS:true,
-                logging:false,
-                backgroundColor:"#ffffff"
-            },
-            jsPDF:{
-                unit:"in",
-                format:"a4",
-                orientation:"portrait"
-            }
-        })
-        .from(clone)
-        .save()
-        .then(()=>{
-            document.body.removeChild(clone);
-        });
+    const imgWidth = pageWidth - 20;
+    const imgHeight = canvas.height * imgWidth / canvas.width;
 
+    pdf.addImage(imgData, "PNG", 10, 10, imgWidth, imgHeight);
+
+    pdf.save(
+        "NALHSATON_Ticket_" +
+        document.getElementById("t-code").textContent.trim() +
+        ".pdf"
+    );
 }
