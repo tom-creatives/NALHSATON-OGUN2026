@@ -283,7 +283,7 @@
 <div style="margin-top: 14px; display: flex; flex-direction: column; gap: 12px;">
 <div>
 <div style="font-family:'IBM Plex Mono',monospace; font-size:0.65rem; letter-spacing:0.08em; text-transform:uppercase; color:#7a7a68;">Opens</div>
-<div style="font-family:'Fraunces',serif; font-weight:700; font-size:1.2rem; color: var(--green-dark);">15th July 2026</div>
+<div style="font-family:'Fraunces',serif; font-weight:700; font-size:1.2rem; color: var(--green-dark);">20th July 2026</div>
 </div>
 <div>
 <div style="font-family:'IBM Plex Mono',monospace; font-size:0.65rem; letter-spacing:0.08em; text-transform:uppercase; color:#7a7a68;">Regular Closes</div>
@@ -519,64 +519,154 @@
 <input id="f-payref" name="paymentReference" placeholder="e.g. Bank transfer reference" type="text"/>
 </div>
 </div>
+</div>
 <!-- ══ SECTION 5: EMERGENCY CONTACT ══ -->
 <div class="form-section">
-<div class="form-section-head">
-<span class="form-section-no">05</span>
-<span class="form-section-title">Emergency Contact</span>
+    <div class="form-section-head">
+        <span class="form-section-no">05</span>
+        <span class="form-section-title">Emergency Contact</span>
+    </div>
+
+    <div class="form-row two">
+        <div class="field">
+            <label for="f-ec-name">
+                Contact Name <span class="req">*</span>
+            </label>
+            <input
+                id="f-ec-name"
+                name="emergencyContactName"
+                type="text"
+                placeholder="Full name"
+                required
+            />
+        </div>
+
+        <div class="field">
+            <label for="f-ec-rel">
+                Relationship <span class="req">*</span>
+            </label>
+            <input
+                id="f-ec-rel"
+                name="emergencyRelationship"
+                type="text"
+                placeholder="e.g. Spouse, Sibling, Parent"
+                required
+            />
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="field">
+            <label for="f-ec-phone">
+                Contact Phone <span class="req">*</span>
+            </label>
+            <input
+                id="f-ec-phone"
+                name="emergencyPhone"
+                type="tel"
+                placeholder="080XXXXXXXX"
+                required
+            />
+        </div>
+    </div>
 </div>
-<div class="form-row two">
-<div class="field">
-<label for="f-ec-name">Contact Name</label>
-<input id="f-ec-name" name="emergencyContactName" placeholder="Full name" type="text"/>
-</div>
-<div class="field">
-<label for="f-ec-rel">Relationship</label>
-<input id="f-ec-rel" name="emergencyRelationship" placeholder="e.g. Spouse, Sibling, Parent" type="text"/>
-</div>
-</div>
-<div class="form-row">
-<div class="field">
-<label for="f-ec-phone">Contact Phone</label>
-<input id="f-ec-phone" name="emergencyPhone" placeholder="080XXXXXXXX" type="tel"/>
-</div>
-</div>
+
 <!-- ══ SECTION 6: CONSENT AND DECLARATION ══ -->
 <div class="form-section">
-<div class="form-section-head">
-<span class="form-section-no">06</span>
-<span class="form-section-title">Consent and Declaration</span>
+
+    <div class="form-section-head">
+        <span class="form-section-no">06</span>
+        <span class="form-section-title">
+            Consent and Declaration
+        </span>
+    </div>
+
+    <div class="form-row" style="padding:16px 0 0;">
+        <div class="field">
+            <label for="f-cert-name">
+                Preferred Name on Conference Certificate
+                <span class="req">*</span>
+            </label>
+
+            <input
+                id="f-cert-name"
+                name="certificateName"
+                type="text"
+                placeholder="Name exactly as you want it on the certificate"
+                required
+            />
+
+            <p style="font-size:.78rem;color:#7a7a68;margin-top:5px;">
+                This name will appear on your conference participation certificate.
+            </p>
+        </div>
+    </div>
+
+    <div style="background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:18px 20px;display:flex;flex-direction:column;gap:14px;margin-top:14px;">
+
+        <label class="decl-check">
+            <input
+                type="checkbox"
+                name="photoConsent"
+                value="I consent to photographs and videos taken during the conference to be used by NALHSATON"
+                required
+                style="accent-color:var(--green-deep);width:17px;height:17px;flex-shrink:0;margin-top:2px;"
+            />
+            <span>
+                I consent to photographs and videos taken during the conference to be used by NALHSATON.
+                <span class="req">*</span>
+            </span>
+        </label>
+
+        <label class="decl-check">
+            <input
+                type="checkbox"
+                name="informationCorrect"
+                value="I certify that the information provided is correct."
+                required
+                style="accent-color:var(--green-deep);width:17px;height:17px;flex-shrink:0;margin-top:2px;"
+            />
+            <span>
+                I certify that the information provided is correct.
+                <span class="req">*</span>
+            </span>
+        </label>
+
+        <label class="decl-check">
+            <input
+                type="checkbox"
+                name="conferenceRules"
+                value="I agree to abide by the rules of the conference."
+                required
+                style="accent-color:var(--green-deep);width:17px;height:17px;flex-shrink:0;margin-top:2px;"
+            />
+            <span>
+                I agree to abide by the rules of the conference.
+                <span class="req">*</span>
+            </span>
+        </label>
+
+    </div>
+
 </div>
-<div class="form-row" style="padding:16px 0 0;">
-<div class="field">
-<label for="f-cert-name">Preferred Name on Conference Certificate <span class="req">*</span></label>
-<input id="f-cert-name" name="certificateName" placeholder="Name exactly as you want it on the certificate" required="" type="text"/>
-<p style="font-size:0.78rem;color:#7a7a68;margin-top:5px;">This name will be printed on your participation certificate. Defaults to your full name if left blank.</p>
-</div>
-</div>
-<div style="background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:18px 20px;display:flex;flex-direction:column;gap:14px;margin-top:14px;">
-<label class="decl-check">
-<input name="photoConsent" required="" style="accent-color:var(--green-deep);width:17px;height:17px;flex-shrink:0;margin-top:2px;" type="checkbox" value="I consent to photographs and videos taken during the conference to be used by NALHSATON"/>
-<span>I consent to photographs and videos taken during the conference to be used by NALHSATON. <span class="req">*</span></span>
-</label>
-<label class="decl-check">
-<input name="informationCorrect" required="" style="accent-color:var(--green-deep);width:17px;height:17px;flex-shrink:0;margin-top:2px;" type="checkbox" value="I certify that the information provided is correct"/>
-<span>I certify that the information provided is correct. <span class="req">*</span></span>
-</label>
-<label class="decl-check">
-<input name="conferenceRules" required="" style="accent-color:var(--green-deep);width:17px;height:17px;flex-shrink:0;margin-top:2px;" type="checkbox" value="I agree to abide by the rules of the conference."/>
-<span>I agree to abide by the rules of the conference. <span class="req">*</span></span>
-</label>
-</div>
-</div>
-<button class="btn btn-primary form-submit" id="reg-submit" style="width:100%;justify-content:center;padding:16px;font-size:1rem;margin-top:8px;" type="submit">Complete Registration &amp; Get Ticket →</button>
-<p class="form-foot-note" style="margin-top:12px;">Having trouble? <a href="mailto:ogunnalhsaton@gmail.com?subject=Registration%20Help" style="color:var(--green-deep);font-weight:600;text-decoration:underline;">Email us directly</a> and we'll register you manually.</p>
+
+<button
+    class="btn btn-primary form-submit"
+    id="reg-submit"
+    type="submit"
+    style="width:100%;justify-content:center;padding:16px;font-size:1rem;margin-top:8px;">
+    Complete Registration &amp; Get Ticket →
+</button>
+
+<p class="form-foot-note" style="margin-top:12px;">
+    Having trouble?
+    <a href="mailto:ogunnalhsaton@gmail.com?subject=Registration%20Help"
+       style="color:var(--green-deep);font-weight:600;text-decoration:underline;">
+        Email us directly
+    </a>
+    and we'll register you manually.
+</p>
 </div></div></div></div></form>
-</div>
-<div class="form-actions">
-<button class="btn btn-gold" id="reg-submit" type="submit">
-                Complete Registration &amp; Get Ticket →
-            </button>
 </div>
 
 </div>
@@ -657,6 +747,7 @@
 
     <p class="ticket-note">
         Save a copy of this ticket. Present it at the registration desk in Abeokuta.
+        Check your email for a registration confirmation, if not seen, check spam folder
     </p>
 
     <p class="ticket-note">
@@ -808,7 +899,6 @@
 <li><a href="#about">Theme &amp; Sub-theme</a></li>
 <li><a href="#executives">Chapter Executives</a></li>
 <li><a href="#about-us">About NALHSATON</a></li>
-<li><a href="#about-us">About NALHSATON</a></li>
 <li><a href="#speakers">Distinguished Speakers</a></li>
 <li><a href="#partners">Stakeholders &amp; Partners</a></li>
 <li><a href="#register">Registration</a></li>
@@ -827,6 +917,7 @@
 <script src="js/api.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="js/ticket.js"></script>
 <script src="js/email.js"></script>
 <script src="js/app.js"></script>
 <script src="script.js"></script>
