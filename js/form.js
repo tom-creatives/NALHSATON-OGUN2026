@@ -76,7 +76,7 @@ function getRegistrationFee(registrationType) {
             return "FREE";
 
         case "Late Registration":
-            return "₦18,000";   // Change if applicable
+            return "₦17,000";   // Change if applicable
 
         default:
             return "Not Available";
